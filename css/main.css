@@ -12,9 +12,9 @@ body {
   margin: 0;
 }
 
-main {
+/* main {
   margin: 0 2rem;
-}
+} */
 
 h1,
 h2,
@@ -30,6 +30,11 @@ h1 {
   text-align: center;
 }
 
+h3 {
+  background: #f8b8d0;
+  padding-left: 2rem;
+}
+
 header {
   background: #f8b8d0;
 }
@@ -42,23 +47,25 @@ ul{
 
 .skip-links a{
   margin: 0;
-  /* padding-top: 2rem; */
-  color: #628CEF;
+  color: #0C2D79;
   font-weight: 400;
 }
 
-
-
 .skip-links a:hover {
-  color: #6f5a64;
+  color: white;
+  background: #6f5a64;
   font-weight: 800;
+  border: 2px solid black;
+}
+
+.skip-links a:focus {
+  color: #0C2D79;
+  background: white;
 }
 
 .container ul li a {
-  /* max-width: 1080px; */
   margin: 0 auto;
   padding: 0;
-  /* padding: 0 1rem; */
 }
 
 img {
@@ -97,12 +104,25 @@ img {
   font-weight: 900;
 }
 
+.main-story {
+  padding: 2rem;
+}
+
 .block {
   display: block;
 }
 
-.about ul li {
+main ul li {
   list-style: none;
+}
+
+main ul {
+  padding: 0;
+}
+
+.owner ul{
+  padding-left: 2rem;
+  margin-bottom: 2rem;
 }
 
 span[itemprop="addressLocality"],
@@ -110,7 +130,11 @@ span[itemprop="addressRegion"] {
   white-space: nowrap; 
 }
 
-form input,
+form {
+  padding: 0 2rem;
+}
+
+form input, 
 form textarea {
   display: block;
   width: 95%;
@@ -137,6 +161,11 @@ form button {
 form button:hover {
   background: #f8b8d0;
   color: black;
+}
+
+form button:focus {
+  background: #628CEF;
+  color: white;
   text-decoration: underline;
 }
 
@@ -151,7 +180,7 @@ footer {
 }
 
 footer a {
-  color: #6f5a64;
+  color: black;
   display: flex;
   justify-content: flex-end;
   

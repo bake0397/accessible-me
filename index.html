@@ -41,12 +41,15 @@
     
   <!-- Main -->
   <main class="main-content" id="content" role="main">
-    <h2 id="story" role="heading">Welcome to Jam Box</h2>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus laboriosam praesentium nostrum ipsa eveniet, officia deserunt cumque eius esse enim, ipsam accusantium autem nihil quaerat sequi perferendis optio quia veritatis.</p>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam perferendis expedita sed itaque odit ipsam omnis, eos voluptates magni fugit culpa voluptatibus, inventore eaque, eligendi voluptatum! Voluptate iusto error voluptatibus.</p>
+    <div class="main-story">
+      <h2 id="story" role="heading">Welcome to Jam Box</h2>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus laboriosam praesentium nostrum ipsa eveniet, officia deserunt cumque eius esse enim, ipsam accusantium autem nihil quaerat sequi perferendis optio quia veritatis.</p>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam perferendis expedita sed itaque odit ipsam omnis, eos voluptates magni fugit culpa voluptatibus, inventore eaque, eligendi voluptatum! Voluptate iusto error voluptatibus.</p>
+    </div>
+    
       
     <div id="about" class="owner" aria-labelledby="about-heading">
-      <h2 role="heading">Meet the owner</h2>
+      <h3 role="heading">Meet the Owner</h3>
       <ul itemscope itemtype="https://schema.org/Person">
         <li itemprop="name">Name: John Doe</li>
         <li itemprop="jobTitle">Title: CEO</li>
@@ -54,10 +57,10 @@
         <li itemprop="telephone">Phone: 613-000-0000</li>
       </ul>
 
-      <h2 role="heading">Address</h2>
+      <h3 role="heading">Address</h3>
       <ul class="address">
         <li itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span class="block" itemprop="name">Jambox Studios </span>
+          <span class="block" itemprop="name">Jam Box Studios </span>
           <span class="block" itemprop="streetAddress">123 Guitar Road, </span>
           <span itemprop="addressLocality">Musicville, </span>
           <span itemprop="addressRegion">Danceistan </span>
@@ -68,19 +71,19 @@
       
   <!-- Contact Form-->
     <div id="contact" class="contact-section" aria-labelledby="contact-heading">
-      <h2 role="heading">Contact Us</h2>
+      <h3 role="heading">Contact Us</h3>
       <form action="thanks.html" method="get">
 
-        <label for="name" class="fullname">Full Name</label>
+        <label for="name" class="fullname" id="fullname-label">Full Name</label>
         <input type="text" name="fullname" id="fullname" placeholder="Type in your Full Name" aria-labelledby="fullname-label">
           
-        <label for="email" class="email">Email</label>
+        <label for="email" class="email" id="email-label">Email</label>
         <input type="email" name="email" id="email" placeholder="Type in your Email" aria-labelledby="email-label">
           
-        <label for="subject" class="subject">Subject</label>
+        <label for="subject" class="subject" id="subject-label">Subject</label>
         <input type="text" name="subject" placeholder="Type in the Subject of your message" aria-labelledby="subject-label">
           
-        <label for="message" class="message">Your Message</label>
+        <label for="message" class="message" id="message-label">Your Message</label>
         <textarea name="message" id="message" placeholder="Type your message here..." aria-labelledby="message-label"></textarea>
         <button type="submit" aria-label="Submit contact form to Jam Box">Send</button>
       </form>
