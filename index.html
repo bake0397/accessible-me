@@ -35,7 +35,7 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
-    <img alt="Succulents" src="https://picsum.photos/1200/900" class="banner">
+    <img alt="Jam Box Studio exterior" src="https://picsum.photos/1200/900" class="banner">
   </header>
   <!-- Header closing tag -->
     
@@ -45,7 +45,7 @@
     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus laboriosam praesentium nostrum ipsa eveniet, officia deserunt cumque eius esse enim, ipsam accusantium autem nihil quaerat sequi perferendis optio quia veritatis.</p>
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam perferendis expedita sed itaque odit ipsam omnis, eos voluptates magni fugit culpa voluptatibus, inventore eaque, eligendi voluptatum! Voluptate iusto error voluptatibus.</p>
       
-    <div id="about" class="owner">
+    <div id="about" class="owner" aria-labelledby="about-heading">
       <h2 role="heading">Meet the owner</h2>
       <ul itemscope itemtype="https://schema.org/Person">
         <li itemprop="name">Name: John Doe</li>
@@ -67,21 +67,21 @@
     </div>
       
   <!-- Contact Form-->
-    <div id="contact" class="contact-section">
+    <div id="contact" class="contact-section" aria-labelledby="contact-heading">
       <h2 role="heading">Contact Us</h2>
       <form action="thanks.html" method="get">
 
         <label for="name" class="fullname">Full Name</label>
-        <input type="text" name="fullname" id="fullname" placeholder="Type in your Full Name">
+        <input type="text" name="fullname" id="fullname" placeholder="Type in your Full Name" aria-labelledby="fullname-label">
           
         <label for="email" class="email">Email</label>
-        <input type="email" name="email" id="email" placeholder="Type in your Email">
+        <input type="email" name="email" id="email" placeholder="Type in your Email" aria-labelledby="email-label">
           
         <label for="subject" class="subject">Subject</label>
-        <input type="text" name="subject" placeholder="Type in the Subject of your message">
+        <input type="text" name="subject" placeholder="Type in the Subject of your message" aria-labelledby="subject-label">
           
         <label for="message" class="message">Your Message</label>
-        <textarea placeholder="Type your message here..."></textarea>
+        <textarea name="message" id="message" placeholder="Type your message here..." aria-labelledby="message-label"></textarea>
         <button type="submit" aria-label="Submit contact form to Jam Box">Send</button>
       </form>
     </div>
