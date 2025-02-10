@@ -26,7 +26,7 @@
       </ul>
     </div>
 <!-- Skip Links closing tag -->
-    <h1 role="heading">Jam Box Studios</h1>
+    <h1 role="heading" aria-level="1">Jam Box Studios</h1>
     <nav class="main-nav" id="nav" role="navigation">
       <ul>
         <li><a href="#top">Home</a></li>
@@ -42,53 +42,56 @@
   <!-- Main -->
   <main class="main-content" id="content" role="main">
     <div class="main-story" aria-labelledby="about-story">
-      <h2 id="about-story" role="heading">Welcome to Jam Box</h2>
+      <h2 id="about-story" role="heading" aria-level="2">Welcome to Jam Box</h2>
       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus laboriosam praesentium nostrum ipsa eveniet, officia deserunt cumque eius esse enim, ipsam accusantium autem nihil quaerat sequi perferendis optio quia veritatis.</p>
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam perferendis expedita sed itaque odit ipsam omnis, eos voluptates magni fugit culpa voluptatibus, inventore eaque, eligendi voluptatum! Voluptate iusto error voluptatibus.</p>
     </div>
     
-      
-    <div id="about" class="owner" aria-labelledby="about-heading">
-      <h3 id="about-heading" role="heading">Meet the Owner</h3>
-      <ul itemscope itemtype="https://schema.org/Person">
-        <li itemprop="name">Name: John Doe</li>
-        <li itemprop="jobTitle">Title: CEO</li>
-        <li itemprop="email">Email: johnjoe@jambox.ca</li>
-        <li itemprop="telephone">Phone: 613-000-0000</li>
-      </ul>
-
-      <h3 role="heading">Address</h3>
-      <ul class="address">
-        <li itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span class="block" itemprop="name">Jam Box Studios </span>
-          <span class="block" itemprop="streetAddress">123 Guitar Road, </span>
-          <span itemprop="addressLocality">Musicville, </span>
-          <span itemprop="addressRegion">Danceistan </span>
-          <span class="block" itemprop="postalCode">B3T 0L0 </span>
-        </li>
-      </ul>
+    <div class="grid">
+      <div id="about" class="owner" aria-labelledby="about-heading">
+        <h3 id="about-heading" role="heading" aria-level="3">Meet the Owner</h3>
+        <ul itemscope itemtype="https://schema.org/Person">
+          <li itemprop="name">Name: John Doe</li>
+          <li itemprop="jobTitle">Title: CEO</li>
+          <li itemprop="email">Email: johnjoe@jambox.ca</li>
+          <li itemprop="telephone">Phone: 613-000-0000</li>
+        </ul>
+      </div>
+      <div class="address-section">
+        <h3 role="heading" aria-level="3">Address</h3>
+        <ul class="address">
+          <li itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+            <span class="block" itemprop="name">Jam Box Studios </span>
+            <span class="block" itemprop="streetAddress">123 Guitar Road, </span>
+            <span itemprop="addressLocality">Musicville, </span>
+            <span itemprop="addressRegion">Danceistan </span>
+            <span class="block" itemprop="postalCode">B3T 0L0 </span>
+          </li>
+        </ul>
+      </div>
+        
+    <!-- Contact Form-->
+      <div id="contact" class="contact-section">
+        <h3 id="contact-heading" role="heading" aria-level="3">Contact Us</h3>
+        <form action="thanks.html" method="get">
+  
+          <label for="fullname" class="fullname" id="fullname-label">Full Name</label>
+          <input type="text" name="fullname" id="fullname" placeholder="Type in your Full Name">
+            
+          <label for="email" class="email" id="email-label">Email</label>
+          <input type="email" name="email" id="email" placeholder="Type in your Email">
+            
+          <label for="subject" class="subject" id="subject-label">Subject</label>
+          <input type="text" name="subject" id="subject" placeholder="Type in the Subject of your message">
+            
+          <label for="message" class="message" id="message-label">Your Message</label>
+          <textarea name="message" id="message" placeholder="Type your message here..."></textarea>
+          <button type="submit" aria-label="Submit contact form to Jam Box">Send</button>
+        </form>
+      </div>
+        <!-- Contact Form closing tag -->
     </div>
-      
-  <!-- Contact Form-->
-    <div id="contact" class="contact-section">
-      <h3 id="contact-heading" role="heading">Contact Us</h3>
-      <form action="thanks.html" method="get">
-
-        <label for="fullname" class="fullname" id="fullname-label">Full Name</label>
-        <input type="text" name="fullname" id="fullname" placeholder="Type in your Full Name">
-          
-        <label for="email" class="email" id="email-label">Email</label>
-        <input type="email" name="email" id="email" placeholder="Type in your Email">
-          
-        <label for="subject" class="subject" id="subject-label">Subject</label>
-        <input type="text" name="subject" id="subject" placeholder="Type in the Subject of your message">
-          
-        <label for="message" class="message" id="message-label">Your Message</label>
-        <textarea name="message" id="message" placeholder="Type your message here..."></textarea>
-        <button type="submit" aria-label="Submit contact form to Jam Box">Send</button>
-      </form>
-    </div>
-      <!-- Contact Form closing tag -->
+    
   </main>
     <!-- Main closng tag -->
 
